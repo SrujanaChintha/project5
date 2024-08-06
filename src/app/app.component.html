@@ -1,0 +1,26 @@
+<h1>{{mystyles.name}}</h1>
+@if(a>b){
+  {{a}} is greater than {{b}}
+}
+@else{
+  {{a}} is less than {{b}}
+
+}
+<h1>angular.dev</h1>
+<hr>
+@for(item of items;track item.nam){
+  <li>Name:{{item.nam}} Reg.no:{{item.regn}}</li>
+
+}@empty{
+  <li>there is no item</li>
+}
+<hr>
+@switch (userRole) {
+   
+  @case('1'){
+    <h1>"monday"</h1>
+      }
+    @case('2'){
+      <h1>"tuesday"</h1>
+  }
+  }
